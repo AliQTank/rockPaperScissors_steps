@@ -19,3 +19,8 @@ body {
 .selection:hover {
     transform: scale(1.2);    /*to grow the icons when cursor hover*/
 }
+
+.results {
+    display: grid;
+    justify-content: center;
+}
