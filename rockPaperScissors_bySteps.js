@@ -26,5 +26,11 @@ selectionButtons.forEach(selectionButton => {
 })
 
 function makeSelection(selection) {
-    console.log(selection)
+    const computerSelection = randomSelection()
+    console.log(computerSelection) // to check function randomSelection() is working
+}
+
+function randomSelection(){
+    const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
+    return SELECTIONS[randomIndex]
 }
