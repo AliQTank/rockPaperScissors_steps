@@ -3,11 +3,19 @@ body {
 }
 
 .selections {
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: center;/*cmbination flex and justify to set .selections into the center horizontaly*/
 }
 
 .selection {
     background:none;
-    border: none;    
+    border: none;  
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem; 
+    transition: 100ms /*applies for hover and pointing out the cursor*/
+}
+
+.selection:hover {
+    transform: scale(1.2);    /*to grow the icons when cursor hover*/
 }
